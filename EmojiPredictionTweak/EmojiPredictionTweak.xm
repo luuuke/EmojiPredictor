@@ -17,6 +17,7 @@
 
 %hook UIKeyboardPredictionView
 
+//shoutout to PoomSmart @ https://github.com/PoomSmart/MorePredict/
 -(void)_setPredictions:(NSArray *)predictions autocorrection:(TIAutocorrectionList *)autocorrection{
 	LWLog(@"autocorrection: %@", autocorrection);
 	LWLog(@"old predictions: %@", predictions);
