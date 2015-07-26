@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD5B11981B64DA1500BBC8D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5B11971B64DA1500BBC8D1 /* Foundation.framework */; };
+		CD5B11A31B64DA1500BBC8D1 /* EmojiPredictionTweak.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD5B11A21B64DA1500BBC8D1 /* EmojiPredictionTweak.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD5B11941B64DA1500BBC8D1 /* EmojiPredictionTweak.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = EmojiPredictionTweak.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5B11971B64DA1500BBC8D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD5B119C1B64DA1500BBC8D1 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		CD5B119D1B64DA1500BBC8D1 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		CD5B119F1B64DA1500BBC8D1 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		CD5B11A01B64DA1500BBC8D1 /* EmojiPredictionTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmojiPredictionTweak-Prefix.pch"; sourceTree = "<group>"; };
+		CD5B11A11B64DA1500BBC8D1 /* EmojiPredictionTweak.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = EmojiPredictionTweak.xm; sourceTree = "<group>"; };
+		CD5B11A21B64DA1500BBC8D1 /* EmojiPredictionTweak.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EmojiPredictionTweak.mm; sourceTree = "<group>"; };
+		CD5B11A71B64DA1500BBC8D1 /* EmojiPredictionTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = EmojiPredictionTweak.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/EmojiPredictionTweak.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD5B11901B64DA1500BBC8D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5B11981B64DA1500BBC8D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD5B11891B64DA1500BBC8D1 = {
+			isa = PBXGroup;
+			children = (
+				CD5B11991B64DA1500BBC8D1 /* EmojiPredictionTweak */,
+				CD5B11961B64DA1500BBC8D1 /* Frameworks */,
+				CD5B11951B64DA1500BBC8D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD5B11951B64DA1500BBC8D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B11941B64DA1500BBC8D1 /* EmojiPredictionTweak.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD5B11961B64DA1500BBC8D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B11971B64DA1500BBC8D1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD5B11991B64DA1500BBC8D1 /* EmojiPredictionTweak */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B11A11B64DA1500BBC8D1 /* EmojiPredictionTweak.xm */,
+				CD5B11A21B64DA1500BBC8D1 /* EmojiPredictionTweak.mm */,
+				CD5B119A1B64DA1500BBC8D1 /* Package */,
+				CD5B119E1B64DA1500BBC8D1 /* Supporting Files */,
+			);
+			path = EmojiPredictionTweak;
+			sourceTree = "<group>";
+		};
+		CD5B119A1B64DA1500BBC8D1 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B119B1B64DA1500BBC8D1 /* DEBIAN */,
+				CD5B11A41B64DA1500BBC8D1 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		CD5B119B1B64DA1500BBC8D1 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B119C1B64DA1500BBC8D1 /* control.txt */,
+				CD5B119D1B64DA1500BBC8D1 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		CD5B119E1B64DA1500BBC8D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B119F1B64DA1500BBC8D1 /* PackageVersion.plist */,
+				CD5B11A01B64DA1500BBC8D1 /* EmojiPredictionTweak-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD5B11A41B64DA1500BBC8D1 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B11A51B64DA1500BBC8D1 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		CD5B11A51B64DA1500BBC8D1 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B11A61B64DA1500BBC8D1 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		CD5B11A61B64DA1500BBC8D1 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B11A71B64DA1500BBC8D1 /* EmojiPredictionTweak.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD5B11911B64DA1500BBC8D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD5B11931B64DA1500BBC8D1 /* EmojiPredictionTweak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5B11AA1B64DA1500BBC8D1 /* Build configuration list for PBXNativeTarget "EmojiPredictionTweak" */;
+			buildPhases = (
+				CD5B118E1B64DA1500BBC8D1 /* ShellScript */,
+				CD5B118F1B64DA1500BBC8D1 /* Sources */,
+				CD5B11901B64DA1500BBC8D1 /* Frameworks */,
+				CD5B11911B64DA1500BBC8D1 /* Headers */,
+				CD5B11921B64DA1500BBC8D1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmojiPredictionTweak;
+			productName = EmojiPredictionTweak;
+			productReference = CD5B11941B64DA1500BBC8D1 /* EmojiPredictionTweak.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD5B118A1B64DA1500BBC8D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					CD5B11931B64DA1500BBC8D1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = CD5B118D1B64DA1500BBC8D1 /* Build configuration list for PBXProject "EmojiPredictionTweak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD5B11891B64DA1500BBC8D1;
+			productRefGroup = CD5B11951B64DA1500BBC8D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD5B11931B64DA1500BBC8D1 /* EmojiPredictionTweak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD5B118E1B64DA1500BBC8D1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		CD5B11921B64DA1500BBC8D1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD5B118F1B64DA1500BBC8D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5B11A31B64DA1500BBC8D1 /* EmojiPredictionTweak.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD5B11A81B64DA1500BBC8D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		CD5B11A91B64DA1500BBC8D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		CD5B11AB1B64DA1500BBC8D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmojiPredictionTweak/EmojiPredictionTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		CD5B11AC1B64DA1500BBC8D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmojiPredictionTweak/EmojiPredictionTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD5B118D1B64DA1500BBC8D1 /* Build configuration list for PBXProject "EmojiPredictionTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5B11A81B64DA1500BBC8D1 /* Debug */,
+				CD5B11A91B64DA1500BBC8D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5B11AA1B64DA1500BBC8D1 /* Build configuration list for PBXNativeTarget "EmojiPredictionTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5B11AB1B64DA1500BBC8D1 /* Debug */,
+				CD5B11AC1B64DA1500BBC8D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD5B118A1B64DA1500BBC8D1 /* Project object */;
+}
