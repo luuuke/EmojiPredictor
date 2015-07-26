@@ -2,7 +2,7 @@ Package: de.nautigg.EmojiPredictor
 Name: EmojiPredictor
 Version: 0.1.1
 Description: Put recent emojis in prediction bar
-Section: Tweak
+Section: Tweaks
 Depends: firmware (>= 8.0), mobilesubstrate
 Priority: optional
 Architecture: iphoneos-arm
