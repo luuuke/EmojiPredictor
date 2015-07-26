@@ -28,6 +28,7 @@
 		[replacementPredictions addObject:emojiCandidate];
 	}
 	LWLog(@"new predictions: %@", replacementPredictions);
+	[replacementPredictions autorelease];
 	%orig(replacementPredictions, NULL);
 }
 

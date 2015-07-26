@@ -18,7 +18,7 @@
 
 #include <logos/logos.h>
 #include <substrate.h>
-@class UIKeyboardEmojiCategory; @class UIKeyboardPredictionView; @class TIZephyrCandidate; 
+@class UIKeyboardEmojiCategory; @class TIZephyrCandidate; @class UIKeyboardPredictionView; 
 static void (*_logos_orig$_ungrouped$UIKeyboardPredictionView$_setPredictions$autocorrection$)(UIKeyboardPredictionView*, SEL, NSArray *, TIAutocorrectionList *); static void _logos_method$_ungrouped$UIKeyboardPredictionView$_setPredictions$autocorrection$(UIKeyboardPredictionView*, SEL, NSArray *, TIAutocorrectionList *); 
 static __inline__ __attribute__((always_inline)) Class _logos_static_class_lookup$TIZephyrCandidate(void) { static Class _klass; if(!_klass) { _klass = objc_getClass("TIZephyrCandidate"); } return _klass; }static __inline__ __attribute__((always_inline)) Class _logos_static_class_lookup$UIKeyboardEmojiCategory(void) { static Class _klass; if(!_klass) { _klass = objc_getClass("UIKeyboardEmojiCategory"); } return _klass; }
 #line 18 "/Users/ng/Dropbox/EmojiPredictionTweak/EmojiPredictionTweak/EmojiPredictionTweak.xm"
@@ -35,10 +35,11 @@ static void _logos_method$_ungrouped$UIKeyboardPredictionView$_setPredictions$au
 		[replacementPredictions addObject:emojiCandidate];
 	}
 	LWLog(@"new predictions: %@", replacementPredictions);
+	
 	_logos_orig$_ungrouped$UIKeyboardPredictionView$_setPredictions$autocorrection$(self, _cmd, replacementPredictions, NULL);
 }
 
 
 static __attribute__((constructor)) void _logosLocalInit() {
 {Class _logos_class$_ungrouped$UIKeyboardPredictionView = objc_getClass("UIKeyboardPredictionView"); MSHookMessageEx(_logos_class$_ungrouped$UIKeyboardPredictionView, @selector(_setPredictions:autocorrection:), (IMP)&_logos_method$_ungrouped$UIKeyboardPredictionView$_setPredictions$autocorrection$, (IMP*)&_logos_orig$_ungrouped$UIKeyboardPredictionView$_setPredictions$autocorrection$);} }
-#line 35 "/Users/ng/Dropbox/EmojiPredictionTweak/EmojiPredictionTweak/EmojiPredictionTweak.xm"
+#line 36 "/Users/ng/Dropbox/EmojiPredictionTweak/EmojiPredictionTweak/EmojiPredictionTweak.xm"

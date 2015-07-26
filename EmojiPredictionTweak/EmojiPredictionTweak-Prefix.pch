@@ -8,7 +8,6 @@
 
 //DEBUG section
 
-#define DEBUG 1
 //#define kLogFilePath @"/var/mobile/Documents/de.ng.coono2.log"
 #define kLogPrefix @"[EmojiPrediction] "
 #define kLogMethodNames 1
