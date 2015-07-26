@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD5B11981B64DA1500BBC8D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5B11971B64DA1500BBC8D1 /* Foundation.framework */; };
 		CD5B11A31B64DA1500BBC8D1 /* EmojiPredictionTweak.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD5B11A21B64DA1500BBC8D1 /* EmojiPredictionTweak.mm */; };
+		CD5B11AE1B64DA3300BBC8D1 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5B11AD1B64DA3300BBC8D1 /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +19,10 @@
 		CD5B119D1B64DA1500BBC8D1 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		CD5B119F1B64DA1500BBC8D1 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		CD5B11A01B64DA1500BBC8D1 /* EmojiPredictionTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmojiPredictionTweak-Prefix.pch"; sourceTree = "<group>"; };
-		CD5B11A11B64DA1500BBC8D1 /* EmojiPredictionTweak.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = EmojiPredictionTweak.xm; sourceTree = "<group>"; };
+		CD5B11A11B64DA1500BBC8D1 /* EmojiPredictionTweak.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = EmojiPredictionTweak.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		CD5B11A21B64DA1500BBC8D1 /* EmojiPredictionTweak.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EmojiPredictionTweak.mm; sourceTree = "<group>"; };
 		CD5B11A71B64DA1500BBC8D1 /* EmojiPredictionTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = EmojiPredictionTweak.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/EmojiPredictionTweak.plist; sourceTree = "<group>"; };
+		CD5B11AD1B64DA3300BBC8D1 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5B11AE1B64DA3300BBC8D1 /* libsubstrate.dylib in Frameworks */,
 				CD5B11981B64DA1500BBC8D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +58,7 @@
 		CD5B11961B64DA1500BBC8D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD5B11AD1B64DA3300BBC8D1 /* libsubstrate.dylib */,
 				CD5B11971B64DA1500BBC8D1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -209,7 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\nlocalexec killall MobileNotes\nlocalopen com.apple.mobilenotes";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -287,6 +291,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EmojiPredictionTweak/EmojiPredictionTweak-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -307,6 +315,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EmojiPredictionTweak/EmojiPredictionTweak-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -337,6 +349,7 @@
 				CD5B11AC1B64DA1500BBC8D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
