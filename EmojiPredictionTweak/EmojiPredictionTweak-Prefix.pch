@@ -9,7 +9,7 @@
 //DEBUG section
 
 //#define kLogFilePath @"/var/mobile/Documents/de.ng.coono2.log"
-#define kLogPrefix @"[EmojiPrediction] "
+#define kLogPrefix @"[EmojiPredictor] "
 #define kLogMethodNames 1
 
 static void __attribute__((unused)) LWLog(NSString* format, ...);
